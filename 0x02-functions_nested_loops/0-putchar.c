@@ -1,18 +1,17 @@
-#include "main.h"
+#include <stdio.h>
 /**
-* main - a function that prints the alphabet, in lowercase
-* Return: Always 0 (Succes)
-*/
+ * main - prints _putchar from a character arrey
+ * Return: 0 on success.
+ */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	char str[] = "_putchar";
+	int i;
+
+	for (i = 0 ; i < 8 ; i++)
+	{
+		putchar(str[i]);
+	}
+	putchar('\n');
 	return (0);
 }
