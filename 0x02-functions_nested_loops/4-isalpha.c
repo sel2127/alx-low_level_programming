@@ -1,19 +1,15 @@
+#include <stdio.h>
 #include "main.h"
 /**
- * _isalpha - checks for alphabet character
- * @c: the parameter that contains letters in lowercase and uppercase
- *
- * Return: 1 if the letter is lowercase or uppercase, 0 otherwise
+ * print_alphabet - prints lowercase letters.
+ * Return: always 0 (success).
  */
-
-int _isalpha(int c)
+void print_alphabet(void)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+	char i;
+
+	for (i = 'a' ; i <= 'z' ; i++)
 	{
-		return (1);
+		putchar(i);
 	}
-	else
-	{
-		return (0);
-	}
-}
+	putchar('\n');
