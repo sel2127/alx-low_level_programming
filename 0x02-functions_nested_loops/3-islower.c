@@ -4,9 +4,9 @@
  * @c: contain the characters to check
  * Return: 1 on success or 0 otherwise
  */
-int _islower(int c)
+int _islower(char c)
 {
-	if (c >= 97 && c <= 122)
+	if (int(c) >= 97 && int`(c) <= 122)
 	{
 		return (1);
 	}
